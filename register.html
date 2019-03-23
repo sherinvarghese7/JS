@@ -1,0 +1,31 @@
+<html>
+
+<script>
+
+function validate(th){
+
+// logic for validation
+
+th.action="objectdemo.html";
+th.submit();
+
+
+
+return false;
+}
+
+</script>
+<body>
+<form action="index.html" onsubmit="return validate(this)">
+
+    <input type="text" id="tx1"><br>
+    <input type="submit">
+
+</form>
+
+
+</body>
+
+
+
+</html>

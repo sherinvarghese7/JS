@@ -1,0 +1,45 @@
+<script>
+
+
+
+    x = "asdf";
+    y = x.toUpperCase();
+    //console.log(y)
+    String.prototype.toUpperCase = function(){return "mera function"}
+
+  y = x.toUpperCase();
+   //tt =  x.meramethod();
+   console.log(y)
+
+function abc(i){
+    var ii;
+    this.ii = i;
+    this.pp = function(){
+        console.log("pp");
+    }
+    return "abccccc";
+}
+
+
+
+console.log(abc(5));
+pp();
+
+dd = new abc();
+dd1 = {
+    name:"naushad"
+    
+    
+    };
+console.log(dd1.name);
+
+dd2 = new Object();
+dd2.name = "naushad";
+
+
+
+console.log(dd1.name);
+dd.pp();
+
+
+</script>

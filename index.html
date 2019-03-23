@@ -1,0 +1,43 @@
+
+
+
+<html>
+<head>
+    <title>Date</title>
+    <script type="text/javascript">
+       
+     var tmdt ;  
+     var timer;
+    window.onload = function(){
+         tmdt = document.getElementById("timedate");
+    }
+    function startTime(){
+       timer = setInterval("displayTime()",1000);
+       // timer = setTimeout("startTime()",1000);
+        console.log(timer);
+    }
+    function displayTime(){
+        dt = new Date();
+        dd = dt.toLocaleTimeString()
+        tmdt.innerHTML = dd;
+       
+       // timer = setTimeout("startTime()",1000);
+       console.log(timer);
+    }
+    function stopTime(){
+       // clearTimeout(timer);
+       clearInterval(timer);
+    }
+   
+
+    </script>
+</head>
+<body>
+    <h3>Date</h3>
+    <hr />
+   <h1>Date : <span id="timedate">...</span></h1>
+   <button type="button" onclick="startTime()">Show Time</button>
+   <button type="button" onclick="stopTime()">Stop Time</button>
+   
+</body>
+</html>
